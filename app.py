@@ -28,8 +28,7 @@ DEPLOY_SHA = os.environ.get("DEPLOY_SHA", "abc1234")
 # Intentional deploy regression flag (coding-agent RCA evidence).
 # Healthy baseline keeps this False. E2E commits flip it True so checkout
 # returns elevated 500s that are visible in the tree at the deploy SHA.
-CHECKOUT_PAYMENT_VALIDATION_BROKEN = False
-
+CHECKOUT_PAYMENT_VALIDATION_BROKEN = True
 # Default memory limit used for OOM simulation (bytes).
 DEFAULT_MEMORY_LIMIT = int(os.environ.get("MEMORY_LIMIT_BYTES", str(256 * 1024 * 1024)))
 
